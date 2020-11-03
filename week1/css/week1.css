@@ -1,0 +1,147 @@
+/*---------base---------*/
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;   
+	height: auto;
+	display: block;
+}
+body {
+    font-family: "Noto Sans TC",-apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+a {
+	display: block;
+	text-decoration: none;
+}
+
+/*---------base---------*/
+body {
+    margin-top: 40px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container_name {
+    font-size: 80px;
+    line-height: 95px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #000;
+}
+.container_pic {
+    padding: 48px 0;
+}
+/*---------header---------*/
+
+.container_title {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bolder;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #96A9C4;
+    margin-bottom: 16px;
+}
+.container_title span {
+    font-size: 24px;
+    color: #A00404;
+    margin-left: 16px;
+}
+.content li {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+.content {
+    margin-bottom: 80px;
+}
+.content-education {
+    margin-bottom: 72px;
+}
+.container_item {
+    background: #415165;
+    padding: 24px 0 42px; 
+    text-align: center;
+    margin-bottom: 80px;
+}
+.item_title , .item_title span {
+    color: #fff;
+}
+.item_title {
+    padding-bottom: 0px;
+    border-bottom: 0px solid #000;
+    margin-bottom: 8px;
+}
+.item {
+    width: 83%;
+    border-top: 2px solid #96A9C4;
+    padding: 30px 0 0 414px;
+    margin: 0 auto; 
+}
+.item li {
+    padding: 10px 0 10px;
+    margin-bottom: 0;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+.item li:before , .experience_item:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    height: 100%;
+    width: 2px;
+    background-color: #96A9C4;
+}
+/*--------------experience-------------------*/
+
+.experience_item li {
+    font-weight: bolder;
+    padding-bottom: 32px;
+    margin-bottom: 0;   
+}
+.experience_item img {
+    margin: 8px 0;
+}
+.experience_item p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    width: 55%;
+}
+.experience_item {
+    margin: 0 0 44px 48px;
+    position: relative;
+}
+.experience_item:before {
+    height: 95%;
+}
+/*--------------footer-------------------*/
+footer.container_item {
+    background-color: #415165;
+    margin-bottom: 0px;
+}
+footer .item li:before {
+    height: 0;
+}
+footer .item {
+    width: 55%;
+    padding-left: 0px;
+}
+footer .item li {
+    text-align: center;
+}
+footer .link a {
+    display: inline-block;
+    margin-right: 24px;
+}
+footer .link a:hover {
+    opacity: 0.5;
+}
+.link-url {
+    color: #fff;
+}
+.link-url:hover {
+    font-size: 30px;
+    color: aqua;
+}
