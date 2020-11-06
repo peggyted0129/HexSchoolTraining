@@ -1,0 +1,372 @@
+.banner {
+    background: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner.png') no-repeat;
+    height: 840px;
+    background-size: cover;
+    position: relative;
+    &-title {
+        @include align-middle;
+        right: 10%;
+    }
+}
+@include mobile {
+    .banner-title {
+        & p {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: right;
+        }
+        & h1 {
+            font-size: 48px;
+            line-height: 72px;
+        }
+    }
+}
+@include smobile {
+    .banner-title {
+        & p {
+            font-size: 16px;
+        }
+        & h1 {
+            font-size: 32px;
+        }
+    }
+}
+@include minmobile {
+    .banner-title {
+        & p {
+            font-size: 14px;
+        }
+        & h1 {
+            font-size: 26px;
+            text-align: right;
+        }
+    }
+}
+
+/*----------------------------------*/
+.main {
+    background: $secondary;
+    & .main-icon {
+        justify-content: space-around;
+        & li {
+            width: 18%;
+            & h4 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+@include desktop {
+    .main .main-icon li {
+        width: 22%;
+        & h4 {
+            font-size: 20px;
+        }
+    }
+}
+@include mobile { 
+    .main {
+        padding: 30px 0;
+    }
+    .main .container {
+        & h2 {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+        & li img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+        }
+        & .main-icon {
+            flex-wrap: wrap;
+            padding: 0 70px;
+            & li {
+                width: 40%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+@include smobile { 
+    .main .container {
+        & h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        & .main-icon li {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/*----------------------------------*/
+
+.classic-pic {
+    width: 60%;
+    & .sunglasses {
+        margin-left: 30px;
+    }
+}
+.classic ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.classic li {
+    justify-content: center;
+}
+@include desktop {
+    .classic-sun {
+        flex-direction: row;
+    }
+    .classic li {
+        justify-content: flex-start;
+        & .classic-pic {
+            margin-right: 30px;
+            & .sunglasses {
+                margin-left: 0;
+            }
+        }
+        & h2 {
+            font-size: 36px;
+        }
+    }
+    .classic .container {
+        margin-left: 40px;
+    }
+}
+@include pad {
+    .classic {
+        padding: 30px 0;
+    }
+    .classic .classic-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .classic li {
+        & h2 {
+            font-size: 28px;
+        }
+    }
+}
+@include mobile {
+    .classic li {
+        position: relative;
+        justify-content: center;
+        width: 95%;
+        margin-bottom: 8px;
+    }
+    .classic-icon {
+        @include align-middle;
+     
+    }
+    .classic-icon .text-primary  {
+        color: $white !important;
+    }
+    .classic-pic {
+        width: 80%;
+    }
+    .classic-icon img {
+        width: 30%;
+        filter: brightness(300);
+    }
+}
+@include smobile {
+    .classic .classic-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .classic-icon img {
+        width: 15%;
+    }
+    .classic li h2 {
+        font-size: 20px;
+    }
+}
+
+
+/*----------------------------------*/
+.design {
+    background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") no-repeat;
+    height: auto;
+    background-size: cover;
+    .design-pic {
+        justify-content: space-around;
+        & .design-text {
+            position: relative;
+            width: 48%;
+            & p {
+                @include position-center; /*處理區塊元素置中*/
+                @include flex-center;  /*處理文字置中*/
+                background: rgba(255, 255, 255, .5);
+            }
+        }
+    }
+}
+@include desktop {
+    .design {
+        padding: 40px;
+        & h2 {
+            margin-bottom: 32px;
+        }
+    }
+}
+@include mobile {
+    .design h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .design-pic {
+        & .design-text {
+            width: 45%;
+        }
+        & p {
+            font-size: 46px;
+        }
+    }
+}
+@include smobile {
+    .design {
+        padding: 0;
+    }
+    .design h2 {
+        font-size: 20px;
+        line-height: 50px;
+        margin-bottom: 0px;
+        padding: 10px 0;
+    }
+    .design .design-pic .design-text {
+        width: 90%;
+    }
+    .design-pic {
+        flex-direction: column;
+        align-items: center;
+    }
+    .design-text {
+        margin-bottom: 16px;
+    }
+    .design-pic p {
+        font-size: 46px;
+    }
+}
+/*-------------------------------*/
+.customer ul {
+    justify-content: space-around;
+}
+.customer-data {
+    width: 23%;
+    border: 2px solid $light;
+    & h6 , & p {
+        margin-bottom: 10px;
+    }
+}
+@include pad {
+    .customer {
+        padding: 16px 0 0;
+        & h2 {
+            margin-bottom: 16px;
+            font-size: 32px;
+        }
+        & ul {
+            flex-wrap: wrap;
+        }
+        & .customer-data {
+            width: 42%;
+            margin-bottom: 28px;
+        }
+    }
+}
+@include smobile {
+    .customer {
+        & h2 {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        & .customer-data {
+            width: 48%;
+        }
+    }
+}
+@media (max-width: 414px) {
+    .customer .customer-data {
+        width: 78%;
+    }
+}
+
+/*-------------------------------*/
+.contact {
+    background: $secondary;
+    & .contact-text {
+        max-width: 50%;
+        & .contact-form .pure-checkbox {
+            line-height: 24px;
+        }
+    }
+}
+.pure-form-stacked input[type=text],.pure-form-stacked input[type=tel],.pure-form-stacked input[type=email] {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 14px;
+}
+.pure-form-stacked textarea {
+    height: 136px;
+    padding: 14px;
+}
+input[type="checkbox"] {
+    width: 5%;
+}
+.pure-form .pure-checkbox {
+    margin: 16px 10px 42px;
+}
+.pure-button-primary {
+    background: $primary;
+    height: 54px;
+    width: 50%;
+    align-self: center;
+}
+.contact-form-checkbox {
+    display: flex;
+    flex-direction: row;
+    & input {
+        margin: 20px 0 42px;
+    }
+}
+@include mobile {
+    .contact {
+        padding: 10px 0;
+        & h2 {
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+        & .contact-text {
+            max-width: 70%;
+            & p {
+                margin-bottom: 12px;
+                font-size: 16px;
+            }
+        }
+    }
+    .pure-form .pure-checkbox {
+        margin: 16px 10px 16px;
+        line-height: 1.5;
+    }
+    .pure-button-primary {
+        width: 70%;
+    }
+    input[type="checkbox"] {
+        width: 10%;
+    }
+}
+@include smobile {
+    .contact {
+        & h2 {
+            font-size: 20px;
+        }
+        & .contact-text {
+            max-width: 95%;
+        }
+    }
+}
