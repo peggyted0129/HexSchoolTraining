@@ -864,6 +864,9 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   .footer .footer-icon li {
     margin-right: 10px;
   }
+  .footer .footer-link .h5 {
+    font-size: 16px;
+  }
   .footer .footer-link a {
     padding: 0px 10px 10px 0px;
   }
@@ -1228,24 +1231,24 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 @media (max-width: 569px) {
-  .design {
+  .design .container {
     padding: 0;
   }
-  .design h2 {
+  .design .container h2 {
     font-size: 24px;
     line-height: 50px;
     margin-bottom: 0px;
     padding: 10px 0;
   }
-  .design .design-pic {
+  .design .container .design-pic {
     flex-direction: column;
     align-items: center;
   }
-  .design .design-pic .design-text {
+  .design .container .design-pic .design-text {
     margin-bottom: 16px;
     width: 90%;
   }
-  .design .design-pic .design-text h3 {
+  .design .container .design-pic .design-text h3 {
     font-size: 46px;
   }
 }
