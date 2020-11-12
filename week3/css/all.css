@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 .mr-1 {
   margin-right: 8px;
 }
@@ -122,43 +122,43 @@
 }
 
 .text-primary {
-  color: #AA0601 !important;
+  color: #AA0601;
 }
 
 .text-secondary {
-  color: #FBF2F2 !important;
+  color: #FBF2F2;
 }
 
 .text-danger {
-  color: #650300 !important;
+  color: #650300;
 }
 
 .text-dgray {
-  color: #212529 !important;
+  color: #212529;
 }
 
 .text-gray {
-  color: #707070 !important;
+  color: #707070;
 }
 
 .text-light {
-  color: #DEE2E6 !important;
+  color: #DEE2E6;
 }
 
 .text-dark {
-  color: #000 !important;
+  color: #000;
 }
 
 .text-white {
-  color: #fff !important;
+  color: #fff;
 }
 
 .text-info {
-  color: #5F3E2D !important;
+  color: #5F3E2D;
 }
 
 .text-warning {
-  color: #B75929 !important;
+  color: #B75929;
 }
 
 /*-------------------------------------*/
@@ -259,8 +259,13 @@ img {
 }
 
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.2;
 }
 
 a {
@@ -269,54 +274,42 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
 /*-----加註其他條件-----*/
 h1, .h1 {
-  font-size: 64px;
-  color: #650300;
+  font-size: 4rem;
   line-height: 96px;
 }
 
 h2, .h2 {
-  font-size: 48px;
-  color: #650300;
+  font-size: 3rem;
   line-height: 72px;
 }
 
 h3, .h3 {
-  font-size: 36px;
-  color: #650300;
+  font-size: 2.25rem;
   line-height: 54px;
 }
 
 h4, .h4 {
-  font-size: 24px;
-  color: #000;
+  font-size: 1.5rem;
 }
 
 h5, .h5 {
-  font-size: 20px;
-  color: #fff;
+  font-size: 1.25rem;
   line-height: 30px;
 }
 
 h6, .h6 {
-  font-size: 16px;
-  color: #000;
+  font-size: 1rem;
   line-height: 24px;
 }
 
-.text-l {
-  font-size: 65px;
-  color: #AA0601;
-}
-
 .text-s {
-  font-size: 14px;
-  color: #000;
+  font-size: 0.875rem;
   line-height: 21px;
 }
 
@@ -346,16 +339,24 @@ h6, .h6 {
   flex-direction: row-reverse;
 }
 
-.flex-jcc {
+.justify-content-center {
   justify-content: center;
 }
 
-.flex-jcsb {
+.justify-content-between {
   justify-content: space-between;
 }
 
-.flex-aic {
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
   align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
 }
 
 /*--------------------------------*/
@@ -387,13 +388,6 @@ h6, .h6 {
   padding: 15px 16px;
 }
 
-/* @mixin clearfix {
-     &:after {
-         content: "";
-         display: table;
-         clear:both;
-    }
- } */
 /*!
 Pure v2.0.3
 Copyright 2013 Yahoo!
@@ -742,7 +736,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .nav {
-  padding: 19px 88px;
+  padding: 0 88px;
 }
 
 .nav .logo a {
@@ -754,13 +748,9 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   white-space: nowrap;
 }
 
-.nav .navbar li {
-  width: 115px;
-}
-
 .nav .navbar li a {
-  height: 70px;
-  line-height: 70px;
+  padding: 39px 32px;
+  height: 30px;
 }
 
 .nav .navbar li a:after {
@@ -771,41 +761,27 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   margin: 5px 0;
   background-color: #fff;
   transition: width .5s;
-  margin: -5px 0;
 }
 
 .navbar li:hover a:after {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav {
-    padding: 19px 39px;
-  }
-  .navbar li {
-    width: 80px;
+    padding: 0 39px;
   }
 }
 
 @media (max-width: 767px) {
   .nav {
     flex-direction: column;
-    padding: 19px 39px 3px;
-  }
-  .navbar li {
-    margin: 0 10px;
-  }
-}
-
-@media (max-width: 569px) {
-  .nav {
-    padding: 0px 0px 0px;
+    padding: 0;
   }
   .nav .logo a {
     background: url("https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587551913424-logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?alt=media&token=7f7e11bb-8470-4bec-8b77-ebda26cb6a76");
     width: 48px;
     height: 30px;
-    background-position: center center;
     margin: 10px 0;
   }
   .nav .navbar {
@@ -813,13 +789,11 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     width: 100%;
   }
   .nav .navbar li {
-    margin: 0;
     width: 50%;
     outline: 2px solid #fff;
   }
   .nav .navbar li a {
-    height: 44px;
-    line-height: 44px;
+    padding: 8px 0;
   }
   .nav .navbar li a:hover {
     background-color: #650300;
@@ -832,43 +806,19 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 /*--------------------------------*/
 .footer {
   background: #AA0601;
+  padding: 0px 30px 30px;
 }
 
-.footer .container {
-  padding: 36px 40px 30px;
+.footer-link a {
+  padding: 48px 48px 48px 0px;
 }
 
-.footer-link li {
-  width: 115px;
-}
-
-.footer-link li:hover a:after {
-  width: 100%;
-}
-
-.footer-link li a {
-  width: 100%;
-  height: 48px;
-  line-height: 48px;
-}
-
-.footer-link li a:after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 3px;
-  margin: 5px 0;
-  background-color: #fff;
-  transition: width .5s;
-  width: 0%;
+.footer-link a:hover {
+  color: #000;
 }
 
 .footer-icon a:hover {
   opacity: .6;
-}
-
-.footer-about {
-  padding-left: 40px;
 }
 
 .footer-about img {
@@ -881,8 +831,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .footer-about a:hover p {
-  font-size: 43px;
-  transition: all .5s;
+  color: #000;
 }
 
 .footer-about:after {
@@ -894,13 +843,8 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   background: #B75929;
 }
 
-.footer-logo {
-  padding-left: 40px;
-}
-
 .footer-logo-service a:hover {
-  font-size: 18px;
-  transition: all .5s;
+  color: #000;
 }
 
 .footer-logo-service img {
@@ -908,36 +852,24 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 @media (max-width: 992px) {
-  .footer .container {
-    padding: 36px 30px 30px 0;
-  }
-  .footer .container .footer-link li {
-    width: 90px;
-  }
-  .footer .container .footer-icon {
-    justify-content: flex-end;
-  }
-  .footer-about {
-    padding-left: 30px;
+  .footer-link a {
+    padding: 30px 30px 30px 0px;
   }
 }
 
 @media (max-width: 767px) {
-  .footer .container {
-    padding: 40px 20px 40px 10px;
-  }
-  .footer .container .footer-link li {
-    width: 80px;
-  }
-  .footer .container .footer-icon img {
+  .footer .footer-icon img {
     width: 24px;
     height: 24px;
   }
-  .footer .container .footer-contact {
-    align-items: center;
+  .footer .footer-contact {
+    margin-bottom: 0;
+  }
+  .footer .footer-link a {
+    padding: 20px 20px 20px 0px;
   }
   .footer .footer-about a {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
   }
   .footer .footer-about a img {
     width: 32px;
@@ -960,18 +892,14 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 @media (max-width: 569px) {
   .footer .container {
     position: relative;
-    padding: 24px 15px 0 0;
-  }
-  .footer .container .footer-contact {
-    margin-bottom: 0;
   }
   .footer .container .footer-contact .footer-link {
     display: none;
   }
   .footer .container .footer-contact .footer-icon {
     position: absolute;
-    top: 40px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
   }
   .footer .container .footer-contact .footer-icon li {
     margin-left: 10px;
@@ -1008,43 +936,61 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 .banner {
   background: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png") no-repeat;
   height: 840px;
+  background-position: center center;
   background-size: cover;
-  position: relative;
 }
 
-.banner-title {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10%;
+.banner .container {
+  align-items: flex-end;
 }
 
-@media (max-width: 767px) {
-  .banner-title p {
+@media (max-width: 1110px) {
+  .banner .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true") no-repeat;
+    height: 394px;
+    background-position: center center;
+    background-size: cover;
+  }
+  .banner .container {
+    max-width: 569px;
+  }
+  .banner .container p {
     font-size: 20px;
     line-height: 30px;
-    text-align: right;
   }
-  .banner-title h1 {
+  .banner .container h1 {
     font-size: 48px;
     line-height: 72px;
   }
 }
 
 @media (max-width: 569px) {
-  .banner-title p {
-    font-size: 16px;
+  .banner .container {
+    max-width: 320px;
   }
-  .banner-title h1 {
+  .banner .container p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .banner .container h1 {
     font-size: 32px;
   }
 }
 
 @media (max-width: 320px) {
-  .banner-title p {
+  .banner .container {
+    max-width: 240px;
+  }
+  .banner .container p {
     font-size: 14px;
   }
-  .banner-title h1 {
+  .banner .container h1 {
     font-size: 26px;
     text-align: right;
   }
@@ -1055,52 +1001,60 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   background: #FBF2F2;
 }
 
-.main .main-icon {
-  justify-content: space-around;
-}
-
 .main .main-icon li {
   width: 18%;
 }
 
-.main .main-icon li h4 {
+.main .main-icon li h3 {
   margin-bottom: 5px;
+  line-height: 33px;
 }
 
 @media (max-width: 992px) {
   .main .main-icon li {
     width: 22%;
   }
-  .main .main-icon li h4 {
-    font-size: 20px;
+  .main .main-icon li h3 {
+    font-size: 22px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main {
     padding: 30px 0;
   }
+  .main .container {
+    max-width: 569px;
+  }
   .main .container h2 {
-    font-size: 32px;
+    font-size: 48px;
     line-height: 48px;
     margin-bottom: 32px;
   }
-  .main .container li img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 16px;
-  }
   .main .container .main-icon {
     flex-wrap: wrap;
-    padding: 0 70px;
   }
   .main .container .main-icon li {
     width: 40%;
     margin-bottom: 40px;
   }
+  .main .container .main-icon li .main-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main .container h2 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 569px) {
+  .main .container {
+    max-width: 345px;
+  }
   .main .container h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -1111,43 +1065,33 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   }
 }
 
+@media (max-width: 375px) {
+  .main .container {
+    max-width: 300px;
+  }
+}
+
 /*----------------------------------*/
 .classic-pic {
-  width: 60%;
+  width: 65%;
 }
 
-.classic-pic .sunglasses {
-  margin-left: 30px;
-}
-
-.classic ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.classic li {
-  justify-content: center;
+.classic-icon {
+  margin-right: 30px;
 }
 
 @media (max-width: 992px) {
-  .classic-sun {
-    flex-direction: row;
-  }
-  .classic li {
-    justify-content: flex-start;
-  }
-  .classic li .classic-pic {
-    margin-right: 30px;
-  }
-  .classic li .classic-pic .sunglasses {
-    margin-left: 0;
-  }
-  .classic li h2 {
-    font-size: 36px;
+  .classic-title {
+    margin-bottom: 32px;
   }
   .classic .container {
-    margin-left: 40px;
+    max-width: 768px;
+  }
+  .classic .container li .classic-pic {
+    margin-right: 10px;
+  }
+  .classic .container li h3 {
+    font-size: 36px;
   }
 }
 
@@ -1155,49 +1099,80 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   .classic {
     padding: 30px 0;
   }
-  .classic .classic-title {
-    font-size: 32px;
+  .classic h2.classic-title {
+    font-size: 48px;
+    line-height: 48px;
     margin-bottom: 10px;
   }
-  .classic li h2 {
+  .classic .container {
+    max-width: 690px;
+  }
+  .classic .container li {
+    margin-bottom: 8px;
+  }
+  .classic .container li h3 {
     font-size: 28px;
+  }
+  .classic .container li .classic-pic {
+    margin-right: 30px;
+  }
+  .classic .container li .classic-icon {
+    margin-right: 0px;
+  }
+  .classic .container .classic-sun {
+    flex-direction: row;
   }
 }
 
 @media (max-width: 767px) {
-  .classic li {
+  .classic h2.classic-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 690px) {
+  .classic .container {
+    max-width: 569px;
+  }
+  .classic .container li .classic-pic {
+    width: 60%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 569px) {
+  .classic {
+    padding: 20px 0 32px;
+  }
+  .classic h2.classic-title {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .classic .container {
+    max-width: 414px;
+  }
+  .classic .container li {
     position: relative;
     justify-content: center;
-    width: 95%;
-    margin-bottom: 8px;
   }
-  .classic-icon {
+  .classic .container li h3 {
+    font-size: 28px;
+  }
+  .classic .container li .classic-pic {
+    width: 100%;
+    margin-right: 0;
+  }
+  .classic .container li .classic-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
   .classic-icon .text-primary {
-    color: #fff !important;
-  }
-  .classic-pic {
-    width: 80%;
+    color: #fff;
   }
   .classic-icon img {
     width: 30%;
     filter: brightness(300);
-  }
-}
-
-@media (max-width: 569px) {
-  .classic .classic-title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .classic-icon img {
-    width: 15%;
-  }
-  .classic li h2 {
-    font-size: 20px;
   }
 }
 
@@ -1208,16 +1183,12 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   background-size: cover;
 }
 
-.design .design-pic {
-  justify-content: space-around;
-}
-
-.design .design-pic .design-text {
+.design .design-text {
   position: relative;
   width: 48%;
 }
 
-.design .design-pic .design-text p {
+.design .design-text h3 {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1229,27 +1200,37 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   align-items: center;
   /*處理文字置中*/
   background: rgba(255, 255, 255, 0.5);
+  font-size: 72px;
 }
 
 @media (max-width: 992px) {
   .design {
-    padding: 40px;
+    padding: 40px 0;
+  }
+  .design .container {
+    max-width: 768px;
   }
   .design h2 {
     margin-bottom: 32px;
   }
+  .design .design-text h3 {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 767px) {
-  .design h2 {
-    font-size: 32px;
+  .design {
+    padding: 20px 0;
+  }
+  .design .container {
+    max-width: 569px;
+  }
+  .design .container h2 {
     margin-bottom: 10px;
+    font-size: 32px;
   }
-  .design-pic .design-text {
-    width: 45%;
-  }
-  .design-pic p {
-    font-size: 46px;
+  .design .container .design-text h3 {
+    font-size: 44px;
   }
 }
 
@@ -1258,43 +1239,40 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     padding: 0;
   }
   .design h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 50px;
     margin-bottom: 0px;
     padding: 10px 0;
   }
-  .design .design-pic .design-text {
-    width: 90%;
-  }
-  .design-pic {
+  .design .design-pic {
     flex-direction: column;
     align-items: center;
   }
-  .design-text {
+  .design .design-pic .design-text {
     margin-bottom: 16px;
+    width: 90%;
   }
-  .design-pic p {
+  .design .design-pic .design-text h3 {
     font-size: 46px;
   }
 }
 
 /*-------------------------------*/
-.customer ul {
-  justify-content: space-around;
-}
-
 .customer-data {
   width: 23%;
   border: 2px solid #DEE2E6;
 }
 
-.customer-data h6, .customer-data p {
+.customer-data .h6, .customer-data p {
   margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
   .customer {
     padding: 16px 0 0;
+  }
+  .customer .container {
+    max-width: 569px;
   }
   .customer h2 {
     margin-bottom: 16px;
@@ -1304,24 +1282,30 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     flex-wrap: wrap;
   }
   .customer .customer-data {
-    width: 42%;
+    width: 48%;
     margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .customer h2 {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 569px) {
   .customer h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 0px;
   }
-  .customer .customer-data {
-    width: 48%;
+  .customer .container {
+    max-width: 345px;
   }
-}
-
-@media (max-width: 414px) {
+  .customer ul {
+    justify-content: center;
+  }
   .customer .customer-data {
-    width: 78%;
+    width: 90%;
   }
 }
 
@@ -1331,11 +1315,19 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 }
 
 .contact .contact-text {
-  max-width: 50%;
+  max-width: 67%;
 }
 
 .contact .contact-text .contact-form .pure-checkbox {
   line-height: 24px;
+}
+
+.contact .contact-text .pure-button:focus {
+  background-color: #650300;
+}
+
+.contact .contact-text .pure-button:hover {
+  background-color: #650300;
 }
 
 .pure-form-stacked input[type=text], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=email] {
@@ -1402,7 +1394,7 @@ input[type="checkbox"] {
 
 @media (max-width: 569px) {
   .contact h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .contact .contact-text {
     max-width: 95%;

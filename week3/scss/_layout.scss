@@ -1,63 +1,45 @@
 .nav {
-    padding: 19px 88px;
+    padding: 0 88px;
     .logo a {
         background: url('https://hexschool.github.io/webLayoutTraining1st/week3/logo.png') no-repeat;
         width: 80px;
         height: 48.57px;
         @include hide-text;
     }
-    .navbar li {
-        width: 115px;
-        & a {
-            height: 70px;
-            line-height: 70px;
-        }
-        & a:after {
+    .navbar li a {
+        padding: 39px 32px;
+        height: 30px;
+        &:after {
             @include nav-hover;
-            margin: -5px 0;
         }
     }
 }
 .navbar li:hover a:after {
     width: 100%;
 }
-@include pad { 
+@include desktop { 
     .nav {
-        padding: 19px 39px;
-    }
-    .navbar li {
-        width: 80px;
+        padding: 0 39px;
     }
 }
 @include mobile {
     .nav {
         flex-direction: column;
-        padding: 19px 39px 3px;
-    }
-    .navbar li {
-        margin: 0 10px;
-    }
-}
-@include smobile {
-    .nav {
-        padding: 0px 0px 0px;
+        padding: 0;
         .logo a {
             background: url('https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587551913424-logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?alt=media&token=7f7e11bb-8470-4bec-8b77-ebda26cb6a76');
             width: 48px;
             height: 30px;
-            background-position: center center;
             margin: 10px 0;
         }
         & .navbar {
             flex-wrap: wrap;
             width: 100%;
             & li {
-                margin: 0;
                 width: 50%;
                 outline: 2px solid $white;
                 & a {
-                    height: 44px;
-                    line-height: 44px;
+                    padding: 8px 0;
                 }
                 & a:hover {
                     background-color: $danger;
@@ -70,25 +52,13 @@
     }
 }
 /*--------------------------------*/
-
 .footer {
     background: $primary;
-    & .container {
-        padding: 36px 40px 30px;
-    }
-    &-link li {
-        width: 115px;
-        &:hover a:after {
-            width: 100%;
-        }
-        & a {
-            width: 100%;
-            height: 48px;
-            line-height: 48px;
-            &:after {
-                @include nav-hover;
-                width: 0%;
-            }
+    padding: 0px 30px 30px;
+    &-link a {
+        padding: 48px 48px 48px 0px;
+        &:hover {
+            color: $dark;
         }
     }
     &-icon {
@@ -97,7 +67,6 @@
         }
     }
     &-about {
-        padding-left: 40px;
         & img {
             width: 44px;
             height: 44px;
@@ -105,8 +74,7 @@
         & a {
             margin-bottom: 17px;
             &:hover p {
-                font-size: 43px;
-                transition: all .5s;
+                color: $dark;
             }
         }
         &:after {
@@ -119,47 +87,33 @@
         }
     }
     &-logo {
-        padding-left: 40px;
         &-service a:hover {
-            font-size: 18px;
-            transition: all .5s;
+            color: $dark;
         }
-        &-service img {
+        &-service img {  // 小圖隱藏
             display: none;
         }
     }
 }
 @include desktop {
-    .footer .container {
-        padding: 36px 30px 30px 0;
-        & .footer-link li {
-            width: 90px;
-        }
-        & .footer-icon {
-            justify-content: flex-end;
-        }
-    }
-    .footer-about {
-        padding-left: 30px;
+    .footer-link a {
+        padding: 30px 30px 30px 0px;
     }
 }
 @include mobile {
     .footer {
-        & .container {
-            padding: 40px 20px 40px 10px;
-            & .footer-link li {
-                width: 80px;
-            }
-            & .footer-icon img {
-                width: 24px;
-                height: 24px;
-            }
-            & .footer-contact {
-                align-items: center;
-            }
+        & .footer-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        & .footer-contact {
+            margin-bottom: 0;
+        }
+        & .footer-link a {
+            padding: 20px 20px 20px 0px;
         }
         & .footer-about a {
-            margin-bottom: 8px;
+            margin-bottom: 0px;
             & img {
                 width: 32px;
                 height: 32px;
@@ -182,16 +136,14 @@
 @include smobile {
     .footer .container {
         position: relative;
-        padding: 24px 15px 0 0 ;
         & .footer-contact {
-            margin-bottom: 0;
             & .footer-link {
                 display: none;
             }
             & .footer-icon {
                 position: absolute;
-                top: 40px;
-                right: 30px;
+                top: 15px;
+                right: 15px;
                 & li {
                     margin-left: 10px;
                     margin-right: 0;
