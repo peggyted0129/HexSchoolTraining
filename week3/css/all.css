@@ -806,11 +806,16 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
 /*--------------------------------*/
 .footer {
   background: #AA0601;
-  padding: 0px 30px 30px;
+  padding: 30px 30px;
+}
+
+.footer-main {
+  border-bottom: 3px solid #B75929;
+  margin-bottom: 17px;
 }
 
 .footer-link a {
-  padding: 48px 48px 48px 0px;
+  padding: 0px 48px 48px 0px;
 }
 
 .footer-link a:hover {
@@ -834,26 +839,20 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   color: #000;
 }
 
-.footer-about:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  margin: 24px 0;
-  background: #B75929;
+.footer .footer-copy {
+  width: 90%;
 }
 
-.footer-logo-service a:hover {
+.footer .footer-copy-link a:hover {
   color: #000;
-}
-
-.footer-logo-service img {
-  display: none;
 }
 
 @media (max-width: 992px) {
   .footer-link a {
-    padding: 30px 30px 30px 0px;
+    padding: 0px 30px 30px 0px;
+  }
+  .footer .footer-copy {
+    width: 85%;
   }
 }
 
@@ -862,11 +861,11 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     width: 24px;
     height: 24px;
   }
-  .footer .footer-contact {
-    margin-bottom: 0;
+  .footer .footer-icon li {
+    margin-right: 10px;
   }
   .footer .footer-link a {
-    padding: 20px 20px 20px 0px;
+    padding: 0px 10px 10px 0px;
   }
   .footer .footer-about a {
     margin-bottom: 0px;
@@ -878,58 +877,52 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
   .footer .footer-about a p {
     font-size: 20px;
   }
-  .footer .footer-logo img {
-    display: none;
+  .footer .footer-copy {
+    width: 100%;
   }
-  .footer .footer-logo-service a {
+  .footer .footer-copy a {
     margin-right: 10px;
   }
-  .footer .footer-about:after {
-    margin: 16px 0 24px;
+  .footer .footer-logo {
+    display: none;
   }
 }
 
 @media (max-width: 569px) {
-  .footer .container {
-    position: relative;
-  }
-  .footer .container .footer-contact .footer-link {
+  .footer .footer-contact .footer-link {
     display: none;
   }
-  .footer .container .footer-contact .footer-icon {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  .footer .container .footer-contact .footer-icon li {
-    margin-left: 10px;
-    margin-right: 0;
-  }
-  .footer .container .footer-about {
-    position: relative;
-  }
-  .footer .container .footer-about p {
+  .footer .footer-contact .footer-about p {
     font-size: 16px;
+    line-height: 20px;
   }
-  .footer .container .footer-logo {
-    flex-direction: column;
+  .footer .footer-contact .footer-about a {
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
-  .footer .container .footer-logo li {
-    margin-bottom: 8px;
+  .footer .footer-logo {
+    display: block;
   }
-  .footer .container .footer-logo .footer-logo-service {
+  .footer .footer-logo img {
+    width: 46px;
+    height: 27.9px;
+  }
+  .footer .footer-copy {
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
   }
-  .footer .container .footer-logo .footer-logo-service img {
-    display: block;
-    position: absolute;
-    bottom: 8px;
-    right: 15px;
+  .footer .footer-copy p {
+    margin-bottom: 10px;
   }
-  .footer .container .footer-logo .footer-logo-service a {
-    margin-bottom: 8px;
+  .footer .footer-copy .footer-copy-link {
+    flex-direction: column;
+  }
+  .footer .footer-copy .footer-copy-link a:first-child {
+    margin-bottom: 10px;
+  }
+  .footer-detail {
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
 }
 
