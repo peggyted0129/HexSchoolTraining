@@ -1,0 +1,178 @@
+.nav {
+    padding: 0 88px;
+    .logo a {
+        background: url('https://hexschool.github.io/webLayoutTraining1st/week3/logo.png') no-repeat;
+        width: 80px;
+        height: 48.57px;
+        @include hide-text;
+    }
+    .navbar li a {
+        padding: 39px 32px;
+        height: 30px;
+        &:after {
+            @include nav-hover;
+        }
+    }
+}
+.navbar li:hover a:after {
+    width: 100%;
+}
+@include desktop { 
+    .nav {
+        padding: 0 39px;
+    }
+}
+@include mobile {
+    .nav {
+        flex-direction: column;
+        padding: 0;
+        .logo a {
+            background: url('https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587551913424-logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?alt=media&token=7f7e11bb-8470-4bec-8b77-ebda26cb6a76');
+            width: 48px;
+            height: 30px;
+            margin: 10px 0;
+        }
+        & .navbar {
+            flex-wrap: wrap;
+            width: 100%;
+            & li {
+                width: 50%;
+                outline: 2px solid $white;
+                & a {
+                    padding: 8px 0;
+                }
+                & a:hover {
+                    background-color: $danger;
+                }
+            }
+        }
+    }
+    .navbar li:hover a:after {
+        width: 0%;
+    }
+}
+/*--------------------------------*/
+.footer {
+    background: $primary;
+    padding: 30px 30px;
+    &-main {
+        border-bottom: 3px solid $warning;
+        margin-bottom: 17px;
+    }
+    &-link a {
+        padding: 0px 48px 48px 0px;
+        &:hover {
+            color: $dark;
+        }
+    }
+    &-icon {
+        & a:hover {
+            opacity: .6;
+        }
+    }
+    &-about {
+        & img {
+            width: 44px;
+            height: 44px;
+        }
+        & a {
+            margin-bottom: 17px;
+            &:hover p {
+                color: $dark;
+            }
+        }
+    }
+    & .footer-copy {
+        width: 90%;
+        &-link a:hover {
+            color: $dark;
+        }
+    }
+}
+@include desktop {
+    .footer-link a {
+        padding: 0px 30px 30px 0px;
+    }
+    .footer .footer-copy {
+        width: 85%;
+    }
+}
+@include mobile {
+    .footer {
+        & .footer-icon {
+            & img {
+                width: 24px;
+                height: 24px;
+            }
+            & li {
+                margin-right: 10px;
+            }
+        }
+        & .footer-link .h5 {
+            font-size: 16px;
+        }
+        & .footer-link a {
+            padding: 0px 10px 10px 0px;
+        }
+        & .footer-about a {
+            margin-bottom: 0px;
+            & img {
+                width: 32px;
+                height: 32px;
+            }
+            & p {
+                font-size: 20px;
+            }
+        }
+        & .footer-copy {
+            width: 100%;
+            & a {
+                margin-right: 10px;
+            }
+        }
+        & .footer-logo {
+            display: none;
+        }
+    }
+}
+@include smobile {
+    .footer .footer-contact {
+        & .footer-link {
+            display: none;
+        }
+        & .footer-about {
+            & p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            & a {
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .footer .footer-logo {
+        display: block;
+        & img {
+            width: 46px;
+            height: 27.9px;
+        }
+    }
+    .footer .footer-copy {
+        flex-direction: column;
+        align-items: flex-start;
+        & p {
+            margin-bottom: 10px;
+        }
+        & .footer-copy-link {
+            flex-direction: column;
+            & a:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .footer-detail {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+}
