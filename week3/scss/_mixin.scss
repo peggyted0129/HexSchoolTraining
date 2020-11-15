@@ -30,13 +30,13 @@
     background-color: $white;
     transition: width .5s;
 }
-@mixin clearfix {
+/* @mixin clearfix {
      &:after {
          content: "";
          display: table;
          clear:both;
     }
-} 
+ } */
 @mixin flex-center {
     display: flex;
     justify-content: center;
