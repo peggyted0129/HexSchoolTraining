@@ -1,0 +1,74 @@
+.list-group-item.active {
+    color: $dark;
+    background-color: $dashboard;
+    border-color: $dash;
+}
+.list-group-item:hover {
+    background-color: $dashboard;
+    transition: .9s;
+}
+.assign-all {
+    & h3 {
+        font-size: 12px;
+        line-height: 2;
+    }
+    & .h6 {
+        font-weight: 900;
+    }
+    & .assign-text {
+        font-size: 12px;
+    }
+}
+.border-dark {
+    border-color: $dash !important;
+}
+.assign {
+    &-title {
+        font-weight: 900;  
+    }
+    &-pic img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    &-message {
+        width: 90%;
+    }
+    &-card-small {
+        line-height: 24px;
+    }
+    &-card .btn {
+        padding: 10px 16px;
+    }
+    &-emily {
+        border-bottom: 2px solid $dash;
+    }
+    &-footer {
+        padding-top: 24px;
+        margin-bottom: 32px;
+    }
+}
+.reply {
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &.active {
+        display: block;
+    }
+    & li {
+        font-weight: 900;
+    }
+    &-icon a {
+        color: $dark;
+        &:hover {
+            color: red;
+        }
+    }
+    & .card-body textarea {
+        outline: none;
+    }
+    & .card-body {
+        padding: 1.4rem 1.25rem;
+    }
+}

@@ -1,0 +1,60 @@
+// color
+$dash: #CDDDCD;
+$dashboard: #EDF4EE;
+$hgray:#0000009A;  
+$pagi: #2A8356;  
+$hot: #E3006E;
+
+$themes: (
+    'dash': $dash,   // 背景色 、 表格框線
+    'dashboard': $dashboard,   // sidebar 背景色
+    'hgray': $hgray, // 重灰色 (字)
+    'pagi': $pagi,    // 分頁
+    'hot': $hot,
+);
+@each $key, $value in $themes {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}
+@each $key, $value in $themes {
+    .text-#{$key} {
+        color: $value;
+    }
+}
+
+.btn-dash {
+    color: $pagi;
+    background-color: $white;
+    border-color: $pagi;
+    &:hover {
+        background-color:$dashboard;
+    }
+}
+.btn-hot {
+    color: $hot;
+    background-color: $white;
+    border-color: $hot;
+    &:hover {
+        background-color:$hot;
+        color: $white;
+    }
+}
+.btn-card {
+    color: $dark;
+    background-color: $dashboard;
+    border-color: $dash;
+    &:hover {
+        background-color:$pagi;
+        color: $white;
+    }
+}
+.btn-read {
+    color: $pagi;
+    background-color: $white;
+    border-color: $pagi;
+    &:hover {
+        background-color:$pagi;
+        color: $white;
+    }
+}

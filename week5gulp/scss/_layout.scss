@@ -1,0 +1,36 @@
+.sidebar {
+	padding: 32px 0 0 32px;
+	&-person {
+		padding: 0 0 32px 32px;
+	}
+	&-logo {
+		background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg') no-repeat;
+		overflow: hidden;
+        text-indent: 101%;
+		white-space: nowrap;
+	}
+	&-link li a {
+		color: $dark;
+		padding: 13px 13px 13px 0;
+		&:hover {
+			background-color: $dash;
+			color: $pagi;
+		}
+	}
+	&-pic {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+	&-mail a {
+		font-size: 14px;
+		color: $hgray;
+		&:hover {
+			color: red;
+		}
+	}
+}
+
+.main {
+	padding: 32px;
+}
