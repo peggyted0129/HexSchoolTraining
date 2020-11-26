@@ -8,6 +8,10 @@ $(document).ready(function () {
     $('.dropdown-icon').toggleClass('rotate');
     $('.dropdown-btn').slideToggle();
   });
+  $('.header-nav-dropdown').click(function (e) {
+    e.preventDefault();
+    $('.header-nav-icon').toggleClass('rotate');
+  });
   $('.appear').click(function (e) {
     e.preventDefault();
     $('.reply').toggleClass('active');

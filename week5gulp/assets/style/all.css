@@ -9762,8 +9762,20 @@ ul {
   list-style: none;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
+.mln-4 {
+  margin-left: 32px;
+}
+
+.mrn-4 {
+  margin-right: 32px;
+}
+
 .header-nav {
-  padding: 32px 32px 32px 17px;
+  padding: 32px;
 }
 
 .logo-icon a, .header-icon a {
@@ -9787,7 +9799,7 @@ ul {
 }
 
 .sidebar {
-  padding: 32px 0 0 32px;
+  padding-top: 32px;
 }
 
 .sidebar-person {
@@ -9799,16 +9811,17 @@ ul {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
+  margin-left: 32px;
 }
 
 .sidebar-link li a {
   color: #343a40;
-  padding: 13px 13px 13px 0;
+  padding: 13px 13px 13px 32px;
+  border-left: 4px solid transparent;
 }
 
 .sidebar-link li a:hover {
-  background-color: #CDDDCD;
-  color: #2A8356;
+  border-left: 4px solid #2A8356;
 }
 
 .sidebar-pic {
@@ -9841,7 +9854,7 @@ ul {
   transition: .9s;
 }
 
-.assign-all h3 {
+.assign-all h4 {
   font-size: 12px;
   line-height: 2;
 }
@@ -9921,7 +9934,7 @@ ul {
 }
 
 .admin-table {
-  padding: 0 32px 63px 17px;
+  padding: 0 32px 63px 32px;
 }
 
 .admin-pagi {
@@ -9944,6 +9957,7 @@ ul {
 .table td {
   border-top: 0px solid #dee2e6;
   border-bottom: 2px solid #EDF4EE;
+  vertical-align: middle;
 }
 
 .table-hover tbody tr:hover {
@@ -10067,10 +10081,6 @@ ul {
 .btn-check {
   color: #343a40;
   background-color: #EDF4EE;
-}
-
-.rotate {
-  transform: rotate(180deg);
 }
 
 .modal-content .check-adimn {

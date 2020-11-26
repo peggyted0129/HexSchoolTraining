@@ -12,14 +12,14 @@
 
 <body>
 
-<div class="container-fluid">
-  <ul class="row">
-    <li class="col-lg-3 bg-dashboard d-flex flex-column justify-content-between">
+<!-- <div class="container-fluid"> -->
+  <div class="row no-gutters">
+    <div class="col-lg-3 bg-dashboard d-flex flex-column justify-content-between">
       <div class="sidebar">
-        <h1 class="sidebar-logo mb-4 pl-5"><a href="index.html">ANSWER</a></h1>
+        <h1 class="sidebar-logo mb-4"><a href="index.html">ANSWER</a></h1>
         <ul class="sidebar-link pl-0">
           <li>
-            <a href="#" class="d-flex font-weight-bold">
+            <a href="#" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 insert_chart
               </span>
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="d-flex font-weight-bold">
+            <a href="#" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 question_answer
               </span>
@@ -35,7 +35,7 @@
             </a>
           </li>
           <li>
-            <a href="index.html" class="d-flex font-weight-bold">
+            <a href="index.html" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 assignment
               </span>
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="d-flex font-weight-bold">
+            <a href="#" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 video_library
               </span>
@@ -51,7 +51,7 @@
             </a>
           </li>
           <li>
-            <a href="admin.html" class="d-flex font-weight-bold">
+            <a href="admin.html" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 supervisor_account
               </span>
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="d-flex font-weight-bold">
+            <a href="#" class="d-flex font-weight-bold align-items-center">
               <span class="material-icons mr-3">
                 settings
               </span>
@@ -75,8 +75,8 @@
           <a href="#">andy0401@mail.com</a>
         </div>
       </div>
-    </li>
-    <li class="col-lg-9">
+    </div>
+    <div class="col-lg-9">
         
 <header class="header-nav d-flex justify-content-between">
     <div class="d-flex">
@@ -238,17 +238,17 @@
 <!-- adminModal -->
 <div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <ul class="modal-content">
-      <li class="modal-header">
-        <h5 class="modal-title h4" id="exampleModalLabel">New Admin</h5>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title h4" id="exampleModalLabel">New Admin</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </li>
-      <li class="modal-body">
+      </div>
+      <div class="modal-body">
         <form action="admin.html" method="post">
           <div class="account">
-            <h5 class="mb-3">Account</h5>
+            <h4 class="h5 mb-3">Account</h4>
             <div class="form-group">
               <label for="inputName">Name</label>
               <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter your name">
@@ -259,7 +259,7 @@
             </div>
           </div>
           <div class="verifi mb-3">
-            <h5 class="mb-3">Verification</h5>
+            <h4 class="h5 mb-3">Verification</h4>
             <div class="d-flex align-items-center mb-3">
               <span class="material-icons text-hot mr-2">warning</span>
               <span class="font-weight-bolder">unverified</span>
@@ -276,7 +276,7 @@
             </select>
           </div>
           <div class="custom form-group mb-0">
-            <h5 class="mb-3">Custom Access</h5>
+            <h4 class="h5 mb-3">Custom Access</h4>
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" value="lecture" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">lecture</label>
@@ -299,28 +299,28 @@
             </div>
           </div>
         </form>
-      </li>
-      <li class="footer-btn modal-footer">
+      </div>
+      <div class="footer-btn modal-footer">
         <a type="submit" class="btn btn-secondary font-weight-bolder" data-dismiss="modal">Cancel</a>
         <a type="submit" class="btn btn-dash font-weight-bolder" id="jsaddModal" data-dismiss="modal">Add</a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </div>
 <!-- editModal -->
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <ul class="modal-content">
-      <li class="modal-header">
-        <h5 class="modal-title h4">Edit Admin</h5>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title h4">Edit Admin</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </li>
-      <li class="modal-body">
+      </div>
+      <div class="modal-body">
         <form action="admin.html" method="post">
           <div class="account">
-            <h5 class="mb-3">Account</h5>
+            <h4 class="h5 mb-3">Account</h4>
             <div class="form-group">
               <label for="editName">Name</label>
               <input type="text" class="form-control edit-form" value="Emir Wicks" id="editName" name="editName" placeholder="Enter your name">
@@ -331,7 +331,7 @@
             </div>
           </div>
           <div class="verifi mb-3">
-            <h5 class="mb-3">Verification</h5>
+            <h4 class="h5 mb-3">Verification</h4>
             <div class="d-flex align-items-center mb-3">
               <span class="material-icons text-pagi mr-2">check_circle</span>
               <span class="font-weight-bolder">verified</span>
@@ -349,7 +349,7 @@
             </select>
           </div>
           <div class="edit-custom custom form-group mb-3">
-            <h5 class="mb-3">Custom Access</h5>
+            <h4 class="h5 mb-3">Custom Access</h4>
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" value="lecture" id="editCheck1">
               <label class="form-check-label" for="editCheck1">lecture</label>
@@ -372,7 +372,7 @@
             </div>
           </div>
           <div class="deactivate mb-3">
-            <h5 class="mb-3">Deactivate Account</h5>
+            <h4 class="h5 mb-3">Deactivate Account</h4>
             <div class="d-flex align-items-center mb-3">
               <span class="material-icons text-hot mr-2">warning</span>
               <span class="font-weight-bolder text-hot">This cannot be undone!</span>
@@ -380,19 +380,19 @@
             <a type="submit" class="btn btn-hot btn-lg btn-block font-weight-bolder">Deactivate This Account</a>
           </div>
         </form>
-      </li>
-      <li class="footer-btn modal-footer">
+      </div>
+      <div class="footer-btn modal-footer">
         <a type="submit" class="btn btn-secondary font-weight-bolder" data-dismiss="modal">Cancel</a>
         <a type="submit" class="btn btn-dash font-weight-bolder" data-dismiss="modal">Add</a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </div>
 <!-- checkModal -->
 <div class="modal fade" id="checkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <ul class="modal-content">
-      <li class="check-adimn modal-body">
+    <div class="modal-content">
+      <div class="check-adimn modal-body">
         <div class="d-flex justify-content-between">
           <img class="check-pic" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emir.jpeg" alt="">
           <ul class="check-mail pl-0 mb-0">
@@ -413,17 +413,17 @@
             </li>
           </ul>
         </div>
-      </li>
-      <li class="dropdown-btn pb-4 footer-btn modal-footer">
+      </div>
+      <div class="dropdown-btn pb-4 footer-btn modal-footer">
         <button type="button" class="btn btn-hot font-weight-bolder" data-dismiss="modal">Deactivate</button>
         <button type="button" class="btn btn-dash font-weight-bolder" data-dismiss="modal">Edit</button>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </div>
-    </li>
-  </ul>
-</div>
+    </div>
+  </div>
+<!-- </div> -->
 
 
 

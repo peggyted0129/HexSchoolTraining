@@ -1,5 +1,5 @@
 .sidebar {
-	padding: 32px 0 0 32px;
+	padding-top: 32px;
 	&-person {
 		padding: 0 0 32px 32px;
 	}
@@ -8,13 +8,14 @@
 		overflow: hidden;
         text-indent: 101%;
 		white-space: nowrap;
+		margin-left: 32px;
 	}
 	&-link li a {
 		color: $dark;
-		padding: 13px 13px 13px 0;
+		padding: 13px 13px 13px 32px;
+		border-left: 4px solid transparent;
 		&:hover {
-			background-color: $dash;
-			color: $pagi;
+			border-left: 4px solid $pagi;
 		}
 	}
 	&-pic {

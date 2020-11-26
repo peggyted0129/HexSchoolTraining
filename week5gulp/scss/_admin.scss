@@ -1,6 +1,6 @@
 .admin {
     &-table {
-        padding: 0 32px 63px 17px;
+        padding: 0 32px 63px 32px;
     }
     &-pagi {
         padding: 0 32px 32px 0;
@@ -17,7 +17,8 @@
 }
 .table th, .table td {
 	border-top: 0px solid #dee2e6; 
-	border-bottom: 2px solid $dashboard; 
+    border-bottom: 2px solid $dashboard; 
+    vertical-align: middle;
 }
 .table-hover tbody tr:hover {
     background-color: $dashboard;
@@ -119,9 +120,6 @@
 .btn-check {
     color: $dark;
     background-color: $dashboard;
-}
-.rotate {
-    transform: rotate(180deg);
 }
 .modal-content .check-adimn {
     padding: 32px;
