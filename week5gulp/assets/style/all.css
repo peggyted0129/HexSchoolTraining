@@ -9822,6 +9822,8 @@ ul {
 
 .sidebar-link li a:hover {
   border-left: 4px solid #2A8356;
+  color: #2A8356;
+  background-color: #CDDDCD;
 }
 
 .sidebar-pic {
