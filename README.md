@@ -11,4 +11,6 @@ week4 : https://peggyted0129.github.io/HexSchoolTraining/week4gulp/index.html
 
 week5 : https://peggyted0129.github.io/HexSchoolTraining/week5gulp/index.html
 
+week6 : https://peggyted0129.github.io/HexSchoolTraining/week6gulp/index.html
+
 week7 : https://peggyted0129.github.io/HexSchoolTraining/week7aos/index.html
