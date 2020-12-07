@@ -11499,7 +11499,11 @@ button:focus {
   bottom: 20px;
   right: 20px;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
 
 .scroll-up {
   padding: 10px;
