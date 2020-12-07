@@ -1,13 +1,11 @@
 .banner {
-    background: url('../images/banner.jpg') no-repeat;
-    height: calc(100vh - 56px);
-    background-size: cover;
+    @include banner("../images/banner.jpg", calc(100vh - 56px));
     background-position: left center;
+    background-attachment: fixed;
     & .btn-shop {
         width: 100%;
     }
 }
-
 /*--------------------------------*/
 
 .chanel-plan {
