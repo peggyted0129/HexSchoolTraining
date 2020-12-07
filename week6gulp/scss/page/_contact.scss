@@ -1,0 +1,16 @@
+.contact-link:after {
+    @include nav-hover;
+    bottom: -2px;
+}
+.contact-link {
+    position: relative;
+}
+.contact-link:hover:after {
+    width: 60%;
+}
+.contact-link:nth-child(3):hover:after {
+    width: 40%;
+}
+.border-bottom {
+    border-bottom: 2px solid $topic !important;
+}
