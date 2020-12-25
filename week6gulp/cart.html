@@ -41,8 +41,8 @@
           </a>
         </li>
         <li class="nav-item mr-lg-9 mr-md-5">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
-           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Wishlist
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
+           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Contact
           </a>
         </li>
         <li class="nav-item d-md-block d-none">
@@ -51,8 +51,8 @@
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
-            Contact
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
+            WishList
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
@@ -115,7 +115,7 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
-              <button type="submit" class="btn btn-block w-50 btn-theme rounded-right">加入購物車</button>
+              <a href="#" class="cart-text btn btn-block w-50 btn-theme rounded-right" data-toggle="modal" data-target="#addCart">加入購物車</a>
             </div>
           </form>
           <a href="#" class="d-flex" data-toggle="modal" data-target="#modalLove">
@@ -163,6 +163,16 @@
   </div>
 </div>
 
+<!-- Modal 購物車-->
+<div class="modal fade" id="addCart" tabindex="-1" role="dialog" aria-labelledby="addCart" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered w-75 mx-auto" role="document">
+    <div class="modal-content">
+      <div class="modal-body px-6">
+        <h5 class="modal-body text-theme font-weight-bolder text-center px-0 py-0">已加入購物車</h5>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -191,7 +201,6 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

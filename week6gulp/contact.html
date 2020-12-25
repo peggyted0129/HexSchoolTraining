@@ -41,8 +41,8 @@
           </a>
         </li>
         <li class="nav-item mr-lg-9 mr-md-5">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
-           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Wishlist
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
+           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Contact
           </a>
         </li>
         <li class="nav-item d-md-block d-none">
@@ -51,8 +51,8 @@
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
-            Contact
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
+            WishList
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
@@ -99,32 +99,34 @@
 <section class="contact mt-11 mb-11 mb-md-13">
   <div class="container-lg container-fluid">
     <div class="row">
+      <!-- sideBar -->
       <nav class="col-md-2 col-12">
         <h2 class="mb-8 h5 text-topic font-weight-bolder d-none d-md-block">會員中心</h2>
         <ul class="d-flex flex-md-column justify-content-between">
-          <li class="contact-link mb-7"><a class="text-topic font-weight-bolder" href="#">會員資料修改</a></li>
+          <li class="contact-link mb-7"><a class="text-dark font-weight-bolder" href="#">會員資料修改</a></li>
           <li class="contact-link mb-7"><a class="text-topic font-weight-bolder" href="#">訂單查詢</a></li>
           <li class="contact-link mb-7"><a class="text-topic font-weight-bolder" href="#">退／換貨申請</a></li>
         </ul>
       </nav>
+      <!-- 個人資料修改 -->
       <div class="col-md-7 order-md-1 order-2">
         <h3 class="h6 font-weight-bold border-bottom border-dark pb-3 mb-4">個人資料修改</h3>
-        <form class="text-topic mb-11">
+        <form class="text-topic mb-11 needs-validation" novalidate>
           <div class="form-group row no-gutters">
             <label for="account" class="col-lg-2 col-3 col-form-label">會員帳號</label>
             <div class="col-lg-7 col-9">
-              <input type="text" readonly class="form-control-plaintext" id="account" value="email@example.com">
+              <input type="text" readonly class="form-control-plaintext" id="account" value="email@example.com" required>
             </div>
           </div>
           <div class="form-group row no-gutters">
             <label for="inputname" class="col-lg-2 col-3 col-form-label">會員姓名</label>
             <div class="col-lg-7 col-9">
-              <input type="text" class="form-control" id="inputname" placeholder="輸入會員姓名">
+              <input type="text" class="form-control" id="inputname" placeholder="輸入會員姓名" required>
             </div>
           </div>
           <div class="form-group row no-gutters">
             <label for="inputSex" class="col-lg-2 col-3 col-form-label">會員性別</label>
-            <select id="inputSex" class="form-control col-lg-2 col-3">
+            <select id="inputSex" class="form-control col-lg-2 col-3 pl-4" required>
               <option value="男">男</option>
               <option value="女">女</option>
             </select>
@@ -132,41 +134,41 @@
           <div class="form-group row no-gutters">
             <label for="inputEmail" class="col-lg-2 col-3 col-form-label">電子信箱</label>
             <div class="col-lg-7 col-9">
-              <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+              <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com" required>
             </div>
           </div>
           <div class="form-group row no-gutters">
             <label for="inputTel" class="col-lg-2 col-3 col-form-label">手機號碼</label>
             <div class="col-lg-7 col-9">
-              <input type="tel" class="form-control" id="inputTel" placeholder="輸入手機號碼">
+              <input type="tel" class="form-control" id="inputTel" placeholder="輸入手機號碼" required>
             </div>
           </div>
           <div class="form-group row no-gutters">
-            <label for="address" class="col-lg-2 col-3 col-form-label">聯絡地址</label>
+            <label for="inputAdress" class="col-lg-2 col-3 col-form-label">聯絡地址</label>
             <div class="col-lg-7 col-9">
-              <select id="inputAdress" class="form-control col-md-6 mb-3"> 
+              <select class="form-control col-md-6 col-12 mb-3" required> 
                 <option selected>台灣及離島</option>
                 <option value="台灣">台灣</option>
                 <option value="美國">美國</option>
               </select>
               <div class="form-row">
-                <div class="col-4 col-md-6">
-                  <select id="inputArea" class="form-control">
+                <div class="col-6">
+                  <select id="inputArea" class="form-control" required>
                     <option value="高雄市" selected>高雄市</option>
                     <option value="台北市">台北市</option>
                   </select>
                 </div>
-                <div class="col-4 col-md-6 mb-3">
-                  <select id="inputState" class="form-control">
+                <div class="col-6 mb-3">
+                  <select id="inputState" class="form-control" required>
                     <option value="鹽埕區" selected>鹽埕區</option>
                     <option value="前鎮區">前鎮區</option>
                   </select>
                 </div>
               </div>
-              <input type="text" class="form-control mb-4" id="address" placeholder="輸入聯絡地址">
+              <input type="text" class="form-control mb-4" id="inputAdress" placeholder="輸入聯絡地址" required>
               <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
                   <label class="form-check-label" for="gridCheck">
                     我願意收到最新優惠情報
                   </label>
@@ -175,28 +177,28 @@
             </div>
           </div>
           <div class="form-group row no-gutters">
-            <label for="address" class="col-3 col-lg-2 col-form-label">配送地址</label>
+            <label for="toAddress" class="col-3 col-lg-2 col-form-label">配送地址</label>
             <div class="col-9 col-lg-7">
-              <select id="inputAdress1" class="form-control col-md-6 mb-3"> 
+              <select class="form-control col-md-6 col-12 mb-3" required> 
                 <option selected>台灣及離島</option>
                 <option value="台灣">台灣</option>
                 <option value="美國">美國</option>
               </select>
               <div class="form-row">
-                <div class="col-4 col-md-6">
-                  <select id="inputArea2" class="form-control">
+                <div class="col-6">
+                  <select id="inputArea2" class="form-control" required>
                     <option value="高雄市" selected>高雄市</option>
                     <option value="台北市">台北市</option>
                   </select>
                 </div>
-                <div class="form-group col-4 col-md-6 mb-3">
-                  <select id="inputState3" class="form-control">
+                <div class="form-group col-6 mb-3">
+                  <select id="inputState3" class="form-control" required>
                     <option value="鹽埕區" selected>鹽埕區</option>
                     <option value="前鎮區">前鎮區</option>
                   </select>
                 </div>
               </div>
-              <input type="text" class="form-control mb-5" id="address1" placeholder="輸入聯絡地址">
+              <input type="text" id="toAddress" class="form-control mb-5" placeholder="輸入聯絡地址" required>
               <div class="form-row">
                 <div class="col-8 col-md-6">
                   <button type="submit" class="btn btn-theme btn-block">確定修改</button>
@@ -210,19 +212,19 @@
           <div class="form-group row no-gutters mb-6">
             <label for="oldPass" class="col-3 col-lg-2 col-form-label">舊密碼</label>
             <div class="col-9 col-lg-7">
-              <input type="password" class="form-control" id="oldPass" placeholder="輸入舊密碼">
+              <input type="password" class="form-control" id="oldPass" placeholder="輸入舊密碼" required>
             </div>
           </div>
           <div class="form-group row no-gutters mb-6">
             <label for="newPass" class="col-3 col-lg-2 col-form-label">新密碼</label>
             <div class="col-9 col-lg-7">
-              <input type="password" class="form-control" id="newPass" placeholder="輸入新密碼">
+              <input type="password" class="form-control" id="newPass" placeholder="輸入新密碼" required>
             </div>
           </div>
           <div class="form-group row no-gutters mb-0">
             <label for="checkPass" class="col-3 col-lg-2 col-form-label">確認密碼</label>
             <div class="col-9 col-lg-7">
-              <input type="password" class="form-control mb-5" id="checkPass" placeholder="確認密碼">
+              <input type="password" class="form-control mb-5" id="checkPass" placeholder="確認密碼" required>
               <div class="form-row">
                 <div class="col-8 col-md-6">
                   <button type="submit" class="btn btn-theme btn-block">變更密碼</button>
@@ -232,13 +234,14 @@
           </div>
         </form>
       </div>
+      <!-- 會員資料 -->
       <div class="col-md-3 text-topic order-md-2 order-1 mt-5 mt-md-0">
         <h3 class="h6 font-weight-bold pb-3 mb-4">
           <span class="material-icons">person</span>
           會員編碼
           <span class="h5 font-weight-bold ml-2">T00020080615</span>
         </h3>
-        <table class="table table-borderless text-topic">
+        <table class="contact-table table table-borderless text-topic">
           <thead>
             <tr>
               <th scope="col">購物車</th>
@@ -272,6 +275,28 @@
   </div>
 </section>
 
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+
+
 
 
 
@@ -299,7 +324,6 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

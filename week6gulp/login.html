@@ -41,8 +41,8 @@
           </a>
         </li>
         <li class="nav-item mr-lg-9 mr-md-5">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
-           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Wishlist
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
+           <span class="material-icons align-bottom d-md-inline-block d-none mr-1">favorite</span>Contact
           </a>
         </li>
         <li class="nav-item d-md-block d-none">
@@ -51,8 +51,8 @@
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
-          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="./contact.html">
-            Contact
+          <a class="nav-link h5 text-center px-3 py-md-3 py-5" href="#">
+            WishList
           </a>
         </li>
         <li class="nav-item d-block d-md-none">
@@ -105,21 +105,27 @@
       <div class="col-md-4 col-12">
         <div class="login-from">
           <h2 class="font-weight-bolder mb-4">Log in</h2>
-          <form>
+          <form class="needs-validation" novalidate>
             <div class="form-group mb-6">
               <label for="Inputtext">帳號</label>
               <input type="email" class="form-control" id="Inputtext" aria-describedby="emailHelp" placeholder="email@example.com" required>
+              <div class="invalid-feedback">
+                Please input account.
+              </div>
             </div>
             <div class="form-group mb-11 mb-md-10">
               <label for="InputPassword">密碼</label>
               <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>
+              <div class="invalid-feedback">
+                Please input password.
+              </div>
             </div>
             <div class="d-flex justify-content-between align-items-center">
               <a href="#" class="text-theme font-weight-bolder">忘記密碼</a>
-              <div>
-                <button type="submit" class="btn btn-outline-theme mr-3">註冊</button>
-                <button type="submit" class="btn btn-theme">登入</button>
-              </div>
+              <ul class="d-flex">
+                <li><button type="submit" class="btn btn-outline-theme mr-3">註冊</button></li>
+                <li><button type="submit" class="btn btn-theme">登入</button></li>
+              </ul>
             </div>
           </form>
         </div>
@@ -127,6 +133,27 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
 
 
 
@@ -156,7 +183,6 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
